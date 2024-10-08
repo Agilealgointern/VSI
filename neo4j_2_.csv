@@ -8,21 +8,11 @@ FunctionalEntity_CreationOrModification,Root,,,A functional entity is a specific
 Selection_module,Widget_Creation_module,,,Creates selection widgets which are UI elements that allow users to choose from a list of options. They can be used to filter data displayed or input selection  for forms. ,,
 Widget_Creation_module,FunctionalEntity_CreationOrModification,,,"Creates a widget, which is a user interface element that performs a specific function or displays particular information. They can present information,  facilitate data entry, allowing users to submit information through fields, sliders, dropdown menus or entering text in forms. Widgets allow users to engage with the application, such as by clicking buttons, entering text, or selecting options. Many widgets allow users to personalize their settings or appearance to better suit their preferences.
 ",,
-User_module,Account_Management,"Choose the options required to carry out the user story input from the list below.You can choose more than one option. 
-
-Options:
-As a user, I want to create user admin
+User_module,Account_Management,"print(As a user, I want to create user admin
 As a user, I want to retrieve user admin
 As a user, I want to update user admin
-As a user, I want to delete user admin 
+As a user, I want to delete user admin )
 
-Return ONLY the chosen options.
- IF NO OPTION WAS MATCHED, RETURN NOTHING
-
-Create user admin gives a function that allow users to register new user account.
-Retrieve user admin gives a function that allow users to retrieve account information in system. A use case  will be an administrator or  user can view their account details or a list of accounts.
-Update user admin gives a function that allow users to modify  user account such as user profile. A use case will be a user can change their email address or password after logging in.
-Delete user admin gives a function that allow users to delete user account. A use case will be  a user may wish to delete their account or an administrator might deactivate a user account.
 ","As a user, I want to create user admin
 As a user, I want to retrieve user admin 
 As a user, I want to update user admin 
@@ -30,16 +20,18 @@ As a user, I want to delete user admin ","Creates a user interface that allows p
 ,,,,,"As a user, I want to retrieve user admin","As a user, I want to retrieve user admin"
 ,,,,,"As a user, I want to update user admin ","As a user, I want to update user admin"
 ,,,,,"As a user, I want to delete user admin","As a user, I want to delete user admin"
-RoleAcess_module,Account_Management,"Choose the options required to carry out the user story input from the list below.You can choose more than one option. 
+RoleAcess_module,Account_Management,"Choose from the options required to carry out the user story input from the list below.You can choose more than one option. 
 
 Options:
 As a user, I want to create role admin
-As a user, I want to retrieve role admin
 As a user, I want to update role admin
 As a user, I want to delete role admin
 
-Return ONLY the chosen options.
-IF NO OPTION WAS MATCHED, DO NOT return anything.
+Default:
+As a user, I want to retrieve role admin 
+
+Return  default and ONLY the chosen options.
+IF NO OPTION WAS MATCHED, RETURN ONLY the default.
 
 Create role admin gives a function that allow administrator to create new role.
 Retrieve role admin gives a function that allow administrator to list and retrieve role(s) information. A use case will be an administrator can view all existing roles, including their permissions.
@@ -48,29 +40,16 @@ Delete role admin gives a function that allow administrator to removes roles fro
 
 Example:
 Input:As a System Administrator, I want to delete the ""Admin"" role from the system
-Output:As a user, I want to delete role admin ",,Creates a function that allow administrators and users to implement roles and manage permissions based on roles.,"As a user, I want to create role admin","As a user, I want to create role admin"
+Output:
+As a user, I want to retrieve role admin 
+As a user, I want to delete role admin ",,Creates a function that allow administrators and users to implement roles and manage permissions based on roles.,"As a user, I want to create role admin","As a user, I want to create role admin"
 ,,,,,"As a user, I want to retrieve role admin","As a user, I want to retrieve role admin"
 ,,,,,"As a user, I want to update role admin ","As a user, I want to update role admin"
 ,,,,,"As a user, I want to delete role admin","As a user, I want to delete role admin"
-Organisation_module,Account_Management,"Choose the options required to carry out the user story input from the list below.You can choose more than one option. 
-
-Return ONLY the chosen options.
-If no option was selected, DO NOT return anything.
-
-Options:
-As a user, I want to create organisation admin
+Organisation_module,Account_Management,"print(As a user, I want to create organisation admin
 As a user, I want to retrieve organisation admin
 As a user, I want to update organisation admin
-As a user, I want to delete organisation admin
-
-Create organisation admin gives a function that allow administrator to add new organizations to the system.
-Retrieve organisation admin gives a function that allow administrator to  retrieves organizational data from the system.
-Update organisation admin gives a function that allow administrator to modify existing organizational records.
-Delete organisation admin gives a function that allow administrator to remove an organization from the system.
-
-Example: 
-Input: As an administrator, I need to modify the permissions of the 'Content Editor' role so that they can only publish content and not delete it. Additionally, I want to rename the 'Content Creator' role to 'Content Contributor' to better reflect their responsibilities and prevent confusion.
-Output:As a user, I want to update organisation admin ","As a user, I want to create organisation admin
+As a user, I want to delete organisation admin)","As a user, I want to create organisation admin
 As a user, I want to retrieve organisation admin
 As a user, I want to update organisation admin
 As a user, I want to delete organisation admin","Creates a front end interface to allow user to create, update, retrieve and delete user/organisation groups in the system.  ","As a user, I want to create organisation admin","As a user, I want to create organisation admin"
@@ -79,19 +58,19 @@ As a user, I want to delete organisation admin","Creates a front end interface t
 ,,,,,"As a user, I want to delete organisation admin","As a user, I want to delete organisation admin"
 Notification_module,Communication,"Choose  from the options below based on the user story input.You can choose more than one option. 
 
-Return ONLY the chosen options.
-If no option was selected, DO NOT return anything.
+Return ONLY the  default with the chosen options.
+If no option was selected, ONLY return the default.
 
 Options:
 As a user, I want to create notification
-As a user, I want to retrieve notification
 As a user, I want to update notification
 As a user, I want to delete notification
+
+Default: As a user, I want to retrieve notification
 
 In the context of  a web application, the Notification Module manage and deliver notifications to users by providing timely updates, alerts, and messages relevant to the user experience.
 
 Create notification gives a function for user to add a new notification to the system.
-Retrieve notification gives a function that allow users to retrieve notifications from the system. An example will be to fetch all notifications for a specific user or get a particular notification by ID.
 Update notification givea a function that allow users to modify the notification message.
 Delete notification gives a function that allow users to remove a notification from the system.","As a user, I want to create notification
 As a user, I want to retrieve notification
@@ -102,15 +81,16 @@ As a user, I want to delete notification","Creates a notification module  using 
 ,,,,,"As a user, I want to delete notification","As a user, I want to delete notification"
 TaskManagementPage_module,Communication,"Choose  from the options below based on the user story input.You can choose more than one option. 
 
-Return ONLY the chosen options.
-If no option was selected, DO NOT return anything.
+Return ONLY the default with the chosen options.
+If NO option was selected, ONLY RETURN default
 
 Options:
 As a user, I want to create task
-As a user, I want to retrieve task
 As a user, I want to update task
 As a user, I want to delete task
 
+Default:
+As a user, I want to retrieve task
 A task management module creates a job distribution or workflow interface that users can use to record and update jobs status.
 
 Create task gives a function that allow users to assign and create new work and assign it to the  respective people.
